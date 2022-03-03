@@ -1,2 +1,2 @@
 # project-templates_VS-code
-Project templates for c/c++, fortran and f2py for vs code
+Project templates for C/C++, fortran and f2py for VS code
