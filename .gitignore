@@ -1,6 +1,9 @@
 # Ignore entire folder
 trash
 
+# Apple
+.DS_Store
+
 # Prerequisites
 *.d
 
