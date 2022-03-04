@@ -1,6 +1,9 @@
 # Ignore entire folder
 trash
 
+# Apple
+.DS_Store
+
 # Prerequisites
 *.d
 
@@ -9,6 +12,7 @@ trash
 *.lo
 *.o
 *.obj
+myapp
 
 # Precompiled Headers
 *.gch
