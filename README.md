@@ -7,4 +7,4 @@
 ### ***Things not working*** and to be done later
 
 - Configure launch.json to get debugger work for Apple M1
-        - See: [Link](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+        * See: [Link](https://code.visualstudio.com/docs/cpp/config-clang-mac)
