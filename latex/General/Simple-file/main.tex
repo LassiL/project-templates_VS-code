@@ -102,15 +102,15 @@ Kohn and Sham (KS) replaced the problem of finding the ground state density of t
 \end{equation}
 where it has been assumed that the system is non-magnetic such that each of the $N/2$ orbitals is occupied twice.
 
-In terms of this non-interacting kinetic energy, the KS total energy of the interacting many-body system is,
+In terms of this non-interacting kinetic energy, the KS total energy of the interacting many-body system is given by,
 \begin{equation}\label{KS:total-energy-functional}
     E_{\textrm{KS}}[\rho] = T_0[\rho] + E_{\textrm{H}}[\rho] + E_{\textrm{XC}}^{\textrm{DFT}}[\rho] + \int d^3r v_{\textrm{ext}}(\textbf{r}) \rho(\textbf{r}),
 \end{equation}
-where $E_{\textrm{H}}$ is the Hartree term describing the Coulomb interaction of two charge densities,
+where the Hartree term describes the Coulomb interaction between two charge densities,
 \begin{equation}\label{eq:Hartree-energy}
-    E_{\textrm{H}}[\rho] = \frac{1}{2}\int d^3r d^3r' \frac{\rho(\textbf{r}) \rho(\textbf{r}')}{|\textbf{r}-\textbf{r}'|},
+    E_{\textrm{H}}[\rho] = \frac{1}{2} \sum_{ij} \int d^3r d^3r' \frac{\phi_i(\textbf{r})\phi_{i}^*(\textbf{r}) \phi_j(\textbf{r}')\phi_{j}^*(\textbf{r}')}{|\textbf{r}-\textbf{r}'|} =  \frac{1}{2}\int d^3r d^3r' \frac{\rho(\textbf{r}) \rho(\textbf{r}')}{|\textbf{r}-\textbf{r}'|}.
 \end{equation}
-and $E_{\textrm{XC}}^{\textrm{DFT}}[\rho]$ is the XC functional of DFT.
+It is necessary to sum over the self-interaction term, $i=j$, to write $E_{\textrm{H}}$ in terms of the two densities. The term $E_{\textrm{XC}}^{\textrm{DFT}}[\rho]$ in \eqref{KS:total-energy-functional} is the XC functional of DFT, which should now also account for the fact that kinetic energy is evaluated in the non-interacting KS system.
 \begin{comment}
 , and in DFT we can further note that this term should also account, in theory, for the fact that the kinetic energy is of the non-interacting KS system. \textcolor{red}{Need write better?}
 \end{comment}
@@ -138,13 +138,13 @@ These equations are then solved self-consistently. Starting from an initial gues
 this is the results section, where I have tested figure font sizes
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{0.31\linewidth}
+	\begin{subfigure}{0.325\linewidth}
 		\includegraphics[width=1.0\linewidth]{3x3.png}
 	\end{subfigure}
-    \begin{subfigure}{0.31\linewidth}
+    \begin{subfigure}{0.325\linewidth}
 		\includegraphics[width=1.0\linewidth]{3x3.png}
 	\end{subfigure}
-    \begin{subfigure}{0.31\linewidth}
+    \begin{subfigure}{0.325\linewidth}
 		\includegraphics[width=1.0\linewidth]{3x3.png}
 	\end{subfigure}
     \caption{Test 3x3 figures.}
@@ -152,10 +152,10 @@ this is the results section, where I have tested figure font sizes
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{0.48\linewidth}
+	\begin{subfigure}{0.45\linewidth}
 		\includegraphics[width=1.0\linewidth]{2x2.png}
 	\end{subfigure}
-    \begin{subfigure}{0.48\linewidth}
+    \begin{subfigure}{0.45\linewidth}
 		\includegraphics[width=1.0\linewidth]{2x2.png}
 	\end{subfigure}
     \caption{Test 2x2 figures.}
@@ -163,7 +163,7 @@ this is the results section, where I have tested figure font sizes
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{0.65\linewidth}
+	\begin{subfigure}{0.60\linewidth}
 		\includegraphics[width=1.0\linewidth]{1x1.png}
 	\end{subfigure}
     \caption{Test 1x1 figures.}
