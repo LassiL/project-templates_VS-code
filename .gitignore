@@ -33,3 +33,5 @@ trash
 *.exe
 *.out
 *.app
+C++/.DS_Store
+.DS_Store
