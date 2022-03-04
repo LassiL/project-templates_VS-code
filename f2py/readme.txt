@@ -14,3 +14,4 @@ compile to python module with f2py (activate conda env with numpy first)
 	- https://people.sc.fsu.edu/~jburkardt/f77_src/lapack_examples/lapack_examples.html
 	- http://numerical.recipes/oldverswitcher.html
 	- https://pages.mtu.edu/~shene/COURSES/cs201/NOTES/F90-Subprograms.pdf
+	- http://rime.aos.wisc.edu/gpetty/wp-content/uploads/2012/02/f2py.pdf
