@@ -1,9 +1,6 @@
 # Ignore entire folder
 trash
 
-# Apple
-.DS_Store
-
 # Prerequisites
 *.d
 
@@ -37,3 +34,4 @@ myapp
 *.exe
 *.out
 *.app
+
