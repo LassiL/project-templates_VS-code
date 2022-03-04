@@ -1,6 +1,12 @@
 # Ignore entire folder
 trash
 
+#Apple
+**/.DS_Store
+
+# executables
+**/myapp
+
 # Prerequisites
 *.d
 
@@ -33,5 +39,4 @@ trash
 *.exe
 *.out
 *.app
-C++/.DS_Store
-.DS_Store
+
